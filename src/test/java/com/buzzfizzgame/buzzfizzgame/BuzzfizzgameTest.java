@@ -8,47 +8,38 @@ import org.junit.Test;
 public class BuzzfizzgameTest {
 	
 	@Test
-	public void normalNumberBfGame() {
-		BuzzFizzGameService gfService = new BuzzFizzGameService();
-		//int actual = 1;
+	public void returnAsSameNumberNotMultipleOf3And5() {
+		BuzzFizzGameService gfService = new BuzzFizzGameService();		
 		String expected = "2";
 		assertEquals(expected, gfService.getGameResult(2));			
 	}
 	
 	@Test
-	public void multiplesOf3BfGame() {
-		BuzzFizzGameService gfService = new BuzzFizzGameService();
-		//int actual = 1;
+	public void returnFizzWithMultiplesOf3() {
+		BuzzFizzGameService gfService = new BuzzFizzGameService();		
 		String expected = "Fizz";
 		assertEquals(expected, gfService.getGameResult(9));			
 	}
 	
 	@Test
-	public void multiplesOf5BfGame() {
-		BuzzFizzGameService gfService = new BuzzFizzGameService();
-		//int actual = 1;
+	public void returnBuzzWithMultiplesOf5() {
+		BuzzFizzGameService gfService = new BuzzFizzGameService();		
 		String expected = "Buzz";
 		assertEquals(expected, gfService.getGameResult(10));			
 	}
 	
 	@Test
-	public void multiplesOf3And5BfGame() {
-		BuzzFizzGameService gfService = new BuzzFizzGameService();
-		//int actual = 1;
+	public void returnFizzBuzzWithmultiplesOf3And5() {
+		BuzzFizzGameService gfService = new BuzzFizzGameService();		
 		String expected = "Fizz Buzz";
 		assertEquals(expected, gfService.getGameResult(45));			
 	}
 	
 	@Test
-	public void bigIntInputBfGame() {
-		BuzzFizzGameService gfService = new BuzzFizzGameService();
-		//int actual = 1;
+	public void returnWithSameBigIntAsInput() {
+		BuzzFizzGameService gfService = new BuzzFizzGameService();		
 		String expected = "5765878";
 		assertEquals(expected, gfService.getGameResult(5765878));			
-	}
-	
-	
-	
-	
+	}	
 
 }
